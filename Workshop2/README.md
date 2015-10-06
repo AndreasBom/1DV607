@@ -1,4 +1,4 @@
-##INSTRUKCTIONS
+##INSTRUCTIONS
 
 #####Source code    
 ######/App/OOAD_Workshop2     
