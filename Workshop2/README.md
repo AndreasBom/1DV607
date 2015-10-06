@@ -7,7 +7,7 @@
 #####[Link](https://github.com/AndreasBom/1DV607/releases)   
 Requirements: Windows. Tested on Windows 10.   
    
-###Documentation
+###[Documentation](https://github.com/AndreasBom/1DV607/tree/master/Workshop2/Documentation)   
 #####ClassDiagramAssociations.jpg   
 #####Classdiagram.jpg   
 #####PackageAndThereRelations.jpg   
