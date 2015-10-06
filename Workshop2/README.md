@@ -8,6 +8,7 @@
 Requirements: Windows. Tested on Windows 10.   
    
 ###[Documentation](https://github.com/AndreasBom/1DV607/tree/master/Workshop2/Documentation)   
+Folder contains:
 #####ClassDiagramAssociations.jpg   
 #####Classdiagram.jpg   
 #####PackageAndThereRelations.jpg   
