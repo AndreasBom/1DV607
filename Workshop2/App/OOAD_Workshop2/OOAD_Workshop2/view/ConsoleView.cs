@@ -68,7 +68,7 @@ namespace OOAD_Workshop2.view
         {
             foreach(Member member in members)
             {
-                Console.WriteLine("{0}) {1}  {2} ", member.UniqueId, member.Name, member.PersonalNumber);
+                Console.WriteLine("{0}) {1}  {2}. Number of boats: {3}", member.UniqueId, member.Name, member.PersonalNumber, member.Boats.Count);
             }
         }
 

@@ -29,7 +29,7 @@ namespace OOAD_Workshop2.model
         /// <param name="member"></param>
         public void Save(Member member)
         {
-            member.UniqueId = generateUniqueMemberId();
+            member.UniqueId = GenerateUniqueMemberId();
             members.Add(member);
             db.Save((List<Member>)members);
         }
@@ -47,7 +47,7 @@ namespace OOAD_Workshop2.model
         /// Checks for a unique id in list members and returns 1 int higher
         /// </summary>
         /// <returns></returns>
-        private int generateUniqueMemberId()
+        private int GenerateUniqueMemberId()
         {
             if(members.Count == 0)
             {
@@ -63,7 +63,7 @@ namespace OOAD_Workshop2.model
         /// </summary>
         /// <param name="selectedMember"></param>
         /// <returns></returns>
-        private int generateUniqueBoatId(Member selectedMember)
+        private int GenerateUniqueBoatId(Member selectedMember)
         {
             if (selectedMember.Boats.Count < 1)
             {
@@ -71,13 +71,13 @@ namespace OOAD_Workshop2.model
             }
 
             //resets id, starting on 1 and increses with 1
-            orderBoatId(selectedMember);
+            OrderBoatId(selectedMember);
 
             int highestId = selectedMember.Boats.Max(id => id.Id);
             return highestId + 1;
         }
 
-        private void orderBoatId(Member selectedMember)
+        private void OrderBoatId(Member selectedMember)
         {
             int tmp = 1;
             foreach (Boat boat in selectedMember.Boats)
@@ -139,7 +139,7 @@ namespace OOAD_Workshop2.model
             var member = (from mem in members
                           where mem.UniqueId == addToMember.UniqueId
                           select mem).FirstOrDefault();
-            boat.Id = generateUniqueBoatId(addToMember);
+            boat.Id = GenerateUniqueBoatId(addToMember);
 
             member.Boats.Add(boat);
             db.Save((List<Member>)members);
@@ -153,7 +153,7 @@ namespace OOAD_Workshop2.model
 
             deleteFromMember.Boats.Remove(delBoat);
             //Rearange id starting from 1 and increasing by 1
-            orderBoatId(deleteFromMember);
+            OrderBoatId(deleteFromMember);
             db.Save((List<Member>)members);
         }
 
