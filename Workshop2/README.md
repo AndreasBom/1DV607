@@ -10,6 +10,7 @@ Requirements: Windows. Tested on Windows 10.
 ###[Documentation](https://github.com/AndreasBom/1DV607/tree/master/Workshop2/Documentation)   
 Folder contains:
 #####ClassDiagramAssociations.jpg   
+#####ClassDiagramAssociationsFinal.jpg (added after peer review)   
 #####Classdiagram.jpg   
 #####PackageAndThereRelations.jpg   
 #####SequenceDiagramNewMember.jpg   
